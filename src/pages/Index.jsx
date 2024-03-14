@@ -1,5 +1,5 @@
-import { Box, Circle, Container, Flex, Heading, keyframes, Square, Text, VStack } from "@chakra-ui/react";
-import { FaPaintBrush } from "react-icons/fa";
+import { Box, Circle, Container, Flex, Heading, Square, Text, VStack } from "@chakra-ui/react";
+import InteractiveShape from "../components/InteractiveShape";
 
 const Index = () => {
   return (
@@ -15,9 +15,15 @@ const Index = () => {
             Shapes & Colors
           </Text>
           <Flex justify="space-around">
-            <Circle size="120px" bg="brand.900" />
-            <Square size="120px" bg="brand.700" />
-            <Box height="120px" width="120px" bg="brand.600" borderRadius="30px" />
+            <InteractiveShape>
+              <Circle size="120px" bg="brand.900" />
+            </InteractiveShape>
+            <InteractiveShape>
+              <Square size="120px" bg="brand.700" />
+            </InteractiveShape>
+            <InteractiveShape>
+              <Box height="120px" width="120px" bg="brand.600" borderRadius="30px" />
+            </InteractiveShape>
           </Flex>
         </Box>
         <Box>
