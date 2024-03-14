@@ -1,4 +1,4 @@
-import { Box, Circle, Container, Flex, Heading, Square, Text, VStack } from "@chakra-ui/react";
+import { Box, Circle, Container, Flex, Heading, keyframes, Square, Text, VStack } from "@chakra-ui/react";
 import { FaPaintBrush } from "react-icons/fa";
 
 const Index = () => {
@@ -6,38 +6,38 @@ const Index = () => {
     <Container maxW="container.md" py={10}>
       <VStack spacing={8} align="stretch">
         <Flex justifyContent="center">
-          <Heading as="h1" size="2xl" mb={4}>
+          <Heading as="h1" size="3xl" mb={8} fontWeight="black" letterSpacing="wider">
             Art Project <FaPaintBrush />
           </Heading>
         </Flex>
         <Box>
-          <Text fontSize="xl" mb={2}>
+          <Text fontSize="2xl" mb={4} fontWeight="bold">
             Shapes & Colors
           </Text>
           <Flex justify="space-around">
-            <Circle size="100px" bg="red.200" />
-            <Square size="100px" bg="green.200" />
-            <Box height="100px" width="100px" bg="blue.200" borderRadius="20px" />
+            <Circle size="120px" bg="brand.900" />
+            <Square size="120px" bg="brand.700" />
+            <Box height="120px" width="120px" bg="brand.600" borderRadius="30px" />
           </Flex>
         </Box>
         <Box>
-          <Text fontSize="xl" mb={2}>
+          <Text fontSize="2xl" mb={4} fontWeight="bold">
             Typography
           </Text>
           <VStack>
-            <Text fontSize="2xl" fontWeight="bold" color="purple.500">
+            <Text fontSize="3xl" fontWeight="black" color="brand.500">
               Bold & Vibrant
             </Text>
-            <Text fontSize="lg" fontStyle="italic" color="orange.300">
+            <Text fontSize="2xl" fontWeight="medium" color="brand.800">
               Creative & Italic
             </Text>
-            <Text fontSize="md" letterSpacing="wider" color="teal.400">
+            <Text fontSize="xl" letterSpacing="widest" color="brand.700">
               Wide Letter Spacing
             </Text>
           </VStack>
         </Box>
         <Box>
-          <Text fontSize="xl" mb={2}>
+          <Text fontSize="2xl" mb={4} fontWeight="bold">
             Joyful Composition
           </Text>
           <Flex align="center" justify="center">
