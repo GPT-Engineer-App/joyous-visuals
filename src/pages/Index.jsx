@@ -1,10 +1,5 @@
-import { Box, Circle, Container, Flex, Heading, Square, Text, VStack, keyframes } from "@chakra-ui/react";
+import { Box, Circle, Container, Flex, Heading, Square, Text, VStack } from "@chakra-ui/react";
 import { FaPaintBrush } from "react-icons/fa";
-
-const spin = keyframes`
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-`;
 
 const Index = () => {
   return (
@@ -20,9 +15,9 @@ const Index = () => {
             Shapes & Colors
           </Text>
           <Flex justify="space-around">
-            <Circle size="100px" bg="gray.300" _hover={{ bg: "gray.400", transform: "scale(1.1)" }} animation={`${spin} infinite 20s linear`} />
-            <Square size="100px" bg="gray.300" _hover={{ bg: "gray.400", transform: "scale(1.1)" }} animation={`${spin} infinite 20s linear`} />
-            <Box height="100px" width="100px" bg="gray.300" borderRadius="20px" _hover={{ bg: "gray.400", transform: "scale(1.1)" }} animation={`${spin} infinite 20s linear`} />
+            <Circle size="100px" bg="red.200" />
+            <Square size="100px" bg="green.200" />
+            <Box height="100px" width="100px" bg="blue.200" borderRadius="20px" />
           </Flex>
         </Box>
         <Box>
@@ -30,17 +25,15 @@ const Index = () => {
             Typography
           </Text>
           <VStack>
-            <Flex direction={["column", "row"]} wrap="wrap" justify="space-between">
-              <Text fontSize="2xl" fontWeight="hairline" color="black">
-                Bold & Vibrant
-              </Text>
-              <Text fontSize="lg" fontWeight="normal" color="black">
-                Creative & Italic
-              </Text>
-              <Text fontSize="md" fontWeight="light" color="black">
-                Wide Letter Spacing
-              </Text>
-            </Flex>
+            <Text fontSize="2xl" fontWeight="bold" color="purple.500">
+              Bold & Vibrant
+            </Text>
+            <Text fontSize="lg" fontStyle="italic" color="orange.300">
+              Creative & Italic
+            </Text>
+            <Text fontSize="md" letterSpacing="wider" color="teal.400">
+              Wide Letter Spacing
+            </Text>
           </VStack>
         </Box>
         <Box>
