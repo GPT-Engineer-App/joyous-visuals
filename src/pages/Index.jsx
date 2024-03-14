@@ -7,7 +7,7 @@ const Index = () => {
       <VStack spacing={8} align="stretch">
         <Flex justifyContent="center">
           <Heading as="h1" size="3xl" mb={8} fontWeight="black" letterSpacing="wider">
-            Joyous Visuals <FaPaintBrush />
+            Joyous Visuals
           </Heading>
         </Flex>
         <Box>
